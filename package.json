@@ -1,0 +1,19 @@
+{
+    "name": "NodeJsGameServer",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "Carol",
+    "contributors": [],
+    "dependencies": {
+        "socket.io": "2.0.4"
+    },
+    "description": "description",
+    "repository": "repository",
+    "license": "UNLICENSED"
+}
