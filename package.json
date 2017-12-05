@@ -8,12 +8,12 @@
         "client",
         "browser"
     ],
-    "author": "Carol",
+    "author": "Pablo Henrique Bertaco",
     "contributors": [],
     "dependencies": {
         "socket.io": "2.0.4"
     },
     "description": "description",
     "repository": "repository",
-    "license": "UNLICENSED"
+    "license": "MIT"
 }
