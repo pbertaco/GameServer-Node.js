@@ -1,14 +1,17 @@
 
-var app = require('http').createServer(function(request, response) {
+var http = require('http');
+
+var server = http.createServer(function(request, response) {
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Server running at " + app.address().address + ":" + port);
+    response.end("Server running at " + server.address().address + ":" + port);
 });
 
-app.listen(process.env.PORT || 8900);
+var port = process.env.PORT || 8900;
+server.listen(port);
 
 function Game() {
     console.log('Game()');
-    this.io = require('socket.io')(app);
+    this.io = require('socket.io')(server);
 
     // Defines the list reference of all connected Sockets.
     // This list is updated automatically by socket.io.
@@ -226,3 +229,4 @@ Game.prototype.addHandlers = function () {
 
 // Start the game server
 var game = new Game();
+console.log("Server running at " + server.address().address + ":" + port);
